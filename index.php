@@ -2,10 +2,9 @@
 // PHP example of a simple bot that spits a user's message back.
 
 // Include functions
-include_once 'constants.php';
 include_once 'functions/echo_input.php';
 include_once 'functions/send_response.php';
-
+define('BOT_TOKEN', '7446666131:AAEfIn3hZ6B-s_JfADl6TK_3iyuAlPQzgSc');
 // Grab the JSON input stream from Telegram, convert it to an object
 $update = json_decode(file_get_contents('php://input'));
 
